@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <i class="fa fa-apple" aria-hidden="true"></i>
+        Sign up form
+    </div>
+    <div class="form-container">
+        <form method="get" action="">
+            <div class="each-element-of-form">
+                Name:
+                <input type="text" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="each-element-of-form">
+                Date of birth:
+                <input type="date" placeholder="dd/mm/yyyy" required />
+            </div>
+            <div class="radio-group each-element-of-form">
+                Gender: &nbsp;&nbsp;
+                <input type="radio" name="gender" value="Male" id="1" class="radio-each" checked /> <label
+                    for="1"></label>&nbsp;Male&nbsp;
+                <input type="radio" name="gender" value="Female" id="2" class="radio-each" /> <label
+                    for="2"></label>&nbsp;Female&nbsp;
+            </div>
+            <div class="each-element-of-form">
+                Email address:
+                <input type="email" name="email" placeholder="Enter your email address" required />
+            </div>
+            <div class="each-element-of-form">
+                Password
+                <input type="password" placeholder="Enter your password" required />
+            </div>
+            <div class="each-element-of-form">
+                Location
+                <select>
+                    <option value="" disabled selected hidden>Select Location</option>
+                    <option value="location one">location one</option>
+                    <option value="location two">location two</option>
+                    <option value="location three">location three</option>
+                </select>
+            </div>
+            <div class="each-element-of-form custom">
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                I'm agree with all&nbsp;<a href="#" class="custom-line">terms and conditions</a>
+            </div>
+            <div class="button-group">
+                <button class="button-signup" type="submit">
+                    Sign up
+                </button>
+                <button class="button-cancel" type="reset">
+                    Cancel
+                </button>
+            </div>
+        </form>
+
+        <div class="image-container">
+            <div class="each-image url">
+
+            </div>
+            <div class="each-image">
+                <picture>
+                    <source media="(min-width:650px)"
+                        srcset="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg">
+                    <source media="(min-width:480px)" srcset="https://www.w3schools.com/w3css/img_lights.jpg">
+                    <img src="https://www.w3schools.com/w3css/img_lights.jpg" alt="Flowers" class="image">
+                </picture>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
